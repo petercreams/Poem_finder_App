@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Wyszukiwarka wierszy</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Wylosowany wiersz:</h1>
+    <span style="white-space: pre-line">
+        <p style="text-align: center">
+        {{ text }}
+        </p>
+        <p style = "text-align: center"><a href='/'> Losuj ponownie </a></p>
+    </span>
+
+
+</div>
+{% endblock %}

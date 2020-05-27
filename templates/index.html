@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Wyszukiwarka wierszy</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Wybierz kategorię:</h1>
+    <form action='/losuj' method='POST'>
+        <table style="text-align: center">
+            <tr>
+                <td>miłość</td>
+                <td><input type="checkbox" name="check" value="milosc"></td>
+            </tr>
+            <tr>
+                <td>erotyk</td>
+                <td><input type="checkbox" name="check" value="erotyk"></td>
+            </tr>
+            <tr>
+                <td>nadzieja</td>
+                <td><input type="checkbox" name="check" value="nadzieja"></td>
+            </tr>
+            <tr>
+                <td>wiara</td>
+                <td><input type="checkbox" name="check" value="wiara"></td>
+            </tr>
+            <tr>
+                <td>przyjaźń</td>
+                <td><input type="checkbox" name="check" value="przyjazn"></td>
+            </tr>
+            <tr>
+                <td>życie</td>
+                <td><input type="checkbox" name="check" value="zycie"></td>
+            </tr>
+            <tr>
+                <td>życzenia</td>
+                <td><input type="checkbox" name="check" value="zyczenia"></td>
+            </tr>
+            <tr>
+                <td>okazyjne</td>
+                <td><input type="checkbox" name="check" value="okazyjne"></td>
+            </tr>
+            <tr>
+                <td>dla dzieci</td>
+                <td><input type="checkbox" name="check" value="dladzieci"></td>
+            </tr>
+            <tr>
+                <td>przyroda</td>
+                <td><input type="checkbox" name="check" value="przyroda"></td>
+            </tr>
+            <div class="form">
+                <input type="submit" value="LOSUJ!" id="los">
+            </div>
+        </table>
+    </form>
+
+
+</div>
+
+{% endblock %}
