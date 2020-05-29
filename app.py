@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template
 from Data.textProcessing import poemFind
 
 app = Flask(__name__)

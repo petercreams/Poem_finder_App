@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import random
 
+
 class PoemScraper:
 
     choice = None

@@ -11,6 +11,12 @@ section.w-25{
 #choose-again {
     position: static;
     margin: auto;
+    margin-bottom: 20px;
+    background-color: coral;
+}
+
+#choose-again-cat {
+    margin-bottom: 20px;
     background-color: coral;
 }
 
