@@ -1,13 +1,5 @@
 section.w-25{
     margin: auto;
-}
-
-div.list-group
-{
-    position: relative;
-    margin: auto;
-    width: 500px;
-    padding: 50px 0;
 
 }
 
@@ -21,3 +13,10 @@ div.list-group
     margin: auto;
     background-color: coral;
 }
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
