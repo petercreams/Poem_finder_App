@@ -1,0 +1,23 @@
+section.w-25{
+    margin: auto;
+}
+
+div.list-group
+{
+    position: relative;
+    margin: auto;
+    width: 500px;
+    padding: 50px 0;
+
+}
+
+#category-choose {
+    background-color: coral;
+    color: white;
+}
+
+#choose-again {
+    position: static;
+    margin: auto;
+    background-color: coral;
+}

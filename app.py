@@ -9,24 +9,20 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/losuj', methods=['POST'])
-def losuj():
-    wybory = request.form.getlist('check')
-
-    if len(wybory) > 1:
-        return "Wybierz jedną kategorię!"
-
-    elif len(wybory) == 1:
-        # return render_template('poem_text.html')
-        # return wybory[0]
-        text = poemFind(wybory[0])
-        return render_template('poem_text.html', text=text)
-    else:
-        redirect('/')
-        return render_template('index.html')
-
-    # else:
-    #     return render_template('index.html')
+@app.route('/losuj/<category>', methods=['POST', 'GET'])
+def losuj(category):
+    text = poemFind(category)
+    if category == "milosc":
+        category = "miłość"
+    elif category == "przyjazn":
+        category = "przyjaźń"
+    elif category == "zyczenia":
+        category = "życzenia"
+    elif category == "dladzieci":
+        category = "dla dzieci"
+    elif category == "zycie":
+        category = "życie"
+    return render_template('poem_text.html', text=text, category=category)
 
 
 if (__name__) == "__main__":

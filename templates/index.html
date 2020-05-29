@@ -4,57 +4,23 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
-    <h1 style="text-align: center">Wybierz kategorię:</h1>
-    <form action='/losuj' method='POST'>
-        <table style="text-align: center">
-            <tr>
-                <td>miłość</td>
-                <td><input type="checkbox" name="check" value="milosc"></td>
-            </tr>
-            <tr>
-                <td>erotyk</td>
-                <td><input type="checkbox" name="check" value="erotyk"></td>
-            </tr>
-            <tr>
-                <td>nadzieja</td>
-                <td><input type="checkbox" name="check" value="nadzieja"></td>
-            </tr>
-            <tr>
-                <td>wiara</td>
-                <td><input type="checkbox" name="check" value="wiara"></td>
-            </tr>
-            <tr>
-                <td>przyjaźń</td>
-                <td><input type="checkbox" name="check" value="przyjazn"></td>
-            </tr>
-            <tr>
-                <td>życie</td>
-                <td><input type="checkbox" name="check" value="zycie"></td>
-            </tr>
-            <tr>
-                <td>życzenia</td>
-                <td><input type="checkbox" name="check" value="zyczenia"></td>
-            </tr>
-            <tr>
-                <td>okazyjne</td>
-                <td><input type="checkbox" name="check" value="okazyjne"></td>
-            </tr>
-            <tr>
-                <td>dla dzieci</td>
-                <td><input type="checkbox" name="check" value="dladzieci"></td>
-            </tr>
-            <tr>
-                <td>przyroda</td>
-                <td><input type="checkbox" name="check" value="przyroda"></td>
-            </tr>
-            <div class="form">
-                <input type="submit" value="LOSUJ!" id="los">
-            </div>
-        </table>
-    </form>
-
-
-</div>
+<section class="w-25" style="text-align: center">
+    <h1 style="text-align: center">Wyszukiwarka wierszy</h1>
+    <div class="list-group">
+        <a class="list-group-item" id="category-choose">
+            <strong>Wybierz kategorię!</strong>
+        </a>
+        <a href="/losuj/milosc" class="list-group-item list-group-item-action">miłość</a>
+        <a href="/losuj/erotyk" class="list-group-item list-group-item-action">erotyk</a>
+        <a href="/losuj/nadzieja" class="list-group-item list-group-item-action">nadzieja</a>
+        <a href="/losuj/wiara" class="list-group-item list-group-item-action">wiara</a>
+        <a href="/losuj/przyjazn" class="list-group-item list-group-item-action">przyjaźń</a>
+        <a href="/losuj/zycie" class="list-group-item list-group-item-action">życie</a>
+        <a href="/losuj/zyczenia" class="list-group-item list-group-item-action">życzenia</a>
+        <a href="/losuj/okazyjne" class="list-group-item list-group-item-action">okazyjne</a>
+        <a href="/losuj/dladzieci" class="list-group-item list-group-item-action">dla dzieci</a>
+        <a href="/losuj/przyroda" class="list-group-item list-group-item-action">przyroda</a>
+    </div>
+</section>
 
 {% endblock %}
